@@ -7,17 +7,7 @@ const path = require('path');
 
 app.get("/", async (req: Request, res: Response) => {
   //res.send("Typescript ExpressJS: Hello world, Jefke trying out things");
-  res.sendFile(path.join(__dirname, '/FluxRunHelloWorldTest/index.html'));
-});
-
-
-const testFolder = '/';
-const fs = require('fs');
-
-fs.readdir(testFolder, (err, files) => {
-  files.forEach(file => {
-    console.log(file);
-  });
+  res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 app.listen(port, () => {
