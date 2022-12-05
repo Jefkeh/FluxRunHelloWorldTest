@@ -5,7 +5,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get("/", async (req: Request, res: Response) => {
-  res.send("Typescript ExpressJS: Hello world, Jefke trying out things");
+  //res.send("Typescript ExpressJS: Hello world, Jefke trying out things");
+  res.sendFile('index.html');
 });
 
 app.listen(port, () => {
