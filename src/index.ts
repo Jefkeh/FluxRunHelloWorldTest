@@ -7,7 +7,7 @@ const path = require('path');
 
 
 const fs = require('fs');
-fs.readFileSync(`${__dirname}\\FILENAME`);
+fs.readFileSync(`${__dirname}\\index.html`);
 
 app.get("/", async (req: Request, res: Response) => {
   //res.send("Typescript ExpressJS: Hello world, Jefke trying out things");
