@@ -1,5 +1,5 @@
 {
-  "name": "flux-run-typescript-expressjs",
+  "name": "FluxRunHelloWorldTest",
   "version": "1.0.0",
   "description": "An expressjs server in typescript with live reloading.",
   "main": "index.js",
