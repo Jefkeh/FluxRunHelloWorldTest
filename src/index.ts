@@ -10,6 +10,16 @@ app.get("/", async (req: Request, res: Response) => {
   res.sendFile(path.join(__dirname, '/FluxRunHelloWorldTest/index.html'));
 });
 
+
+const testFolder = '/';
+const fs = require('fs');
+
+fs.readdir(testFolder, (err, files) => {
+  files.forEach(file => {
+    console.log(file);
+  });
+});
+
 app.listen(port, () => {
   console.log(`New Version: App listening at http://localhost:${port}`);
 });
